@@ -156,7 +156,7 @@ hey
 ---------------------------------------|---------|----------|---------|---------|-------------------
 File                                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ---------------------------------------|---------|----------|---------|---------|-------------------
-All files                              |    1.91 |       12 |    6.25 |    1.91 |                   
+All files                              |    2.05 |    11.76 |    6.12 |    2.05 |                   
  c8                                    |       0 |        0 |       0 |       0 |                   
   index.js                             |       0 |        0 |       0 |       0 | 1                 
  c8/bin                                |       0 |        0 |       0 |       0 |                   
@@ -168,12 +168,12 @@ All files                              |    1.91 |       12 |    6.25 |    1.91 
  c8/lib                                |       0 |        0 |       0 |       0 |                   
   is-cjs-esm-bridge.js                 |       0 |        0 |       0 |       0 | 1-10              
   parse-args.js                        |       0 |        0 |       0 |       0 | 1-218             
-  report.js                            |       0 |        0 |       0 |       0 | 1-340             
+  report.js                            |       0 |        0 |       0 |       0 | 1-349             
   source-map-from-file.js              |       0 |        0 |       0 |       0 | 1-100             
  c8/lib/commands                       |       0 |        0 |       0 |       0 |                   
   check-coverage.js                    |       0 |        0 |       0 |       0 | 1-70              
   report.js                            |       0 |        0 |       0 |       0 | 1-41              
- c8/test/fixtures                      |   15.95 |    35.29 |      20 |   15.95 |                   
+ c8/test/fixtures                      |   17.27 |    35.29 |      20 |   17.27 |                   
   async.js                             |     100 |      100 |     100 |     100 |                   
   c8-ignore-next.js                    |       0 |        0 |       0 |       0 | 1-22              
   c8-ignore-start-stop.js              |       0 |        0 |       0 |       0 | 1-21              
@@ -181,6 +181,7 @@ All files                              |    1.91 |       12 |    6.25 |    1.91 
   custom-ext.special                   |      75 |    66.66 |   33.33 |      75 | 14-16,18-20       
   custom-ext2.special                  |       0 |        0 |       0 |       0 | 1-24              
   disable-fs-promises.js               |       0 |        0 |       0 |       0 | 1-4               
+  ex.js                                |     100 |      100 |     100 |     100 |                   
   issue-254.js                         |       0 |        0 |       0 |       0 | 1-7               
   multiple-spawn.js                    |       0 |        0 |       0 |       0 | 1-12              
   normal.js                            |       0 |        0 |       0 |       0 | 1-24              
@@ -200,6 +201,8 @@ All files                              |    1.91 |       12 |    6.25 |    1.91 
   file1.js                             |       0 |        0 |       0 |       0 | 1                 
  c8/test/fixtures/multidir2            |       0 |        0 |       0 |       0 |                   
   file2.js                             |       0 |        0 |       0 |       0 | 1                 
+ ...sts@4.0.0/node_modules/path-exists |       0 |        0 |       0 |       0 |                   
+  index.js                             |       0 |        0 |       0 |       0 | 1-23              
  c8/test/fixtures/report               |       0 |        0 |       0 |       0 |                   
   allowExternal.js                     |       0 |        0 |       0 |       0 | 1                 
   report-multi-dir-external.js         |       0 |        0 |       0 |       0 | 1-12              
@@ -364,6 +367,17 @@ File        | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
 All files   |      75 |       50 |     100 |      75 |                   
  shebang.js |      75 |       50 |     100 |      75 | 7-8               
 ------------|---------|----------|---------|---------|-------------------
+,"
+`;
+
+exports[`c8 exclude unexpected file in result 1`] = `
+",sync:  function
+----------|---------|----------|---------|---------|-------------------
+File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+----------|---------|----------|---------|---------|-------------------
+All files |     100 |      100 |     100 |     100 |                   
+ ex.js    |     100 |      100 |     100 |     100 |                   
+----------|---------|----------|---------|---------|-------------------
 ,"
 `;
 

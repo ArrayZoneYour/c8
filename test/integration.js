@@ -661,4 +661,17 @@ describe('c8', () => {
       output.toString('utf8').should.matchSnapshot()
     })
   })
+
+  it('exclude unexpected file in result', () => {
+    const { output } = spawnSync(nodePath, [
+      c8Path,
+      '--exclude="test/*.js"',
+      '--extension=.js',
+      '--temp-directory=tmp/bundle',
+      '--clean=false',
+      nodePath,
+      require.resolve('./fixtures/bundle/ex.js')
+    ])
+    output.toString('utf8').should.matchSnapshot()
+  })
 })
